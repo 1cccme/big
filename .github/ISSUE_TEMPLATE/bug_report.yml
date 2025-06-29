@@ -1,0 +1,97 @@
+name: "BUG反馈"
+description: "Hook功能不生效或有其他BUG，请选择此项进行反馈。"
+title: "【BUG反馈】"
+labels: [ "Bug/错误" ]
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ⚠️ 反馈须知
+      description: 请在提交前确保你已完成以下检查，否则 Issue 可能会被直接关闭。
+      options:
+        - label: 我确认我是 **LSPosed 用户**，其他框架不提供支持。
+          required: true
+        - label: 我确认已升级至 [最新的 release 版本](https://github.com/Xposed-Modules-Repo/com.bug.hookvip/releases/latest)。
+          required: true
+        - label: 我已在 [已有 Issues](https://github.com/Xposed-Modules-Repo/com.bug.hookvip/issues?q=is%3Aissue+is%3Aclosed) 中查询过，未发现类似问题。
+          required: true
+        - label: 我确认适配软件的版本与模块适配版本一致，适配软件包名与模块适配包名一致。
+          required: true
+        - label: 我已了解 **VIP 显示与 Hook 成功无关**，即使 Hook 成功，软件也可能不会显示 VIP，但功能仍然可用。
+          required: true
+
+  - type: input
+    id: xposed-framework
+    attributes:
+      label: 🛠️ 使用框架
+      description: 请填写你使用的 LSPosed 版本及分支。
+      placeholder: 
+    validations:
+      required: true
+
+  - type: input
+    id: device-model
+    attributes:
+      label: 📱 设备型号
+      description: 请输入你的设备型号。
+      placeholder: 例如：一加 12
+    validations:
+      required: true
+
+  - type: input
+    id: android-version
+    attributes:
+      label: 📟 Android 版本
+      description: 请输入你的 Android 系统版本。
+      placeholder: 例如：Android 15
+    validations:
+      required: true
+
+  - type: input
+    id: app-name
+    attributes:
+      label: 📦 应用名称
+      description: 请输入遇到问题的软件名称。
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 🏷 应用版本号
+      description: 请输入遇到问题的应用版本号。
+    validations:
+      required: true
+
+  - type: input
+    id: module-version
+    attributes:
+      label: 🔧 模块版本号
+      description: 请输入你使用的模块版本号。
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: 📝 问题描述
+      description: 请详细描述你遇到的问题，包括复现步骤、预期行为和实际行为。
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: issues-screenshot
+    attributes:
+      label: 📷 问题截图/视频
+      description: 请上传相关截图或视频（必须提供截图或视频，否则 Issue 可能不会被受理）。
+    validations:
+      required: true
+
+  - type: textarea
+    id: issues-lsposedlog
+    attributes:
+      label: 📜 LSPosed 日志
+      description: 请前往 LSPosed 管理器清空日志，然后重新复现问题后，粘贴最新的 LSPosed 模块日志。
+    validations:
+      required: true
