@@ -28,9 +28,9 @@
 ### 须知
 - 该模块是完全免费的，如果你是从任何收费渠道获得，那么恭喜你，你被骗啦！请不遗余力的进行举报🔆
 - 唯一Telegram频道：@bugccx
-1111111ccccc
-64846767
-4648494
+1111111ccccc hjchxbd gjchfbd fjzhgsvs
+64846767 fuhdbsb fhxgsv dhcucugnt gigibf
+4648494 xjxhbd djdysye djcuhdbd xhxhhxbd d
 34519464
 vggc hfvn hfdb utdcbj
 3458484
